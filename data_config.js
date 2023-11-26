@@ -1,6 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
 
-module.exports = {
-    orgId: process.env.OPENAI_ORG_ID,
-    apiKey: process.env.OPENAI_API_KEY
-}
+dotenv.config();
+
+export const orgId = process.env.OPENAI_ORG_ID;
+export const apiKey = process.env.OPENAI_API_KEY;
